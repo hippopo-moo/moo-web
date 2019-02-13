@@ -11,11 +11,8 @@ add_theme_support( 'post-thumbnails' );
 //カスタムメニュー
 register_nav_menu( 'header-nav',	' ヘッダーナビ ' );
 register_nav_menu( 'footer-nav',	' フッターナビ ' );
-//typed.js
-// function typed_scripts() {
-// 	wp_enqueue_script( 'typed-script', get_template_directory_uri().'/js/typed.min.js' , array('jquery'), false,true;
-// }
-// add_action( 'wp_enqueue_scripts', 'typed_scripts' );
+//ityped.js
+
 //カスタム投稿タイプ
 add_action('init', 'register_post_type_and_taxonomy'); // // 最初にregister_post_type_and_taxonomy関数を実行
 function register_post_type_and_taxonomy() {
